@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shape</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://absol.cf/hightlight/styles/default.css">
+    <!-- <link rel="stylesheet" href="https://absol.cf/materialdesignicons/materialdesignicons.min.css"> -->
+    <script src="../dist/absol-blockly.js?"></script>
+
+    <script src="https://absol.cf/hightlight/highlight.pack.js"></script>
+    <style>
+        .dark.bg {
+            background-color: rgba(30, 30, 32, 1);
+            /* background-color: white; */
+
+        }
+
+        .bg {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: solid 1px rgb(30, 30, 32);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shape</h1>
+    <script class="viewable">
+        var _ = ABlockly._;
+        var $ = ABlockly.$;
+        var canvas = _({
+            tag: 'svg',
+            attr: {
+                width: '900px',
+                height: '400px'
+            }
+        }).addTo(document.body);
+
+        var entry = _({
+            tag: 'entry', props: {
+                name: 'Setup'
+            }
+        }).addTo(canvas).attr('transform', 'translate(5, 5');
+        entry.updateSize();
+
+        var active = _({
+            tag: 'active'
+        }).addTo(canvas).attr('transform', 'translate(5, 40)');
+        entry.updateSize();
+
+    </script>
+
+
+
+</body>
+
+</html>

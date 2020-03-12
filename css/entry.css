@@ -1,0 +1,10 @@
+.ab-entry path{
+    fill: rgb(228, 200, 41);
+}
+
+
+.ab-entry text{
+    fill: white;
+    stroke: none;
+    font-size: 14;
+}
