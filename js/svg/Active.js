@@ -32,6 +32,17 @@ export function makeActivePath(x0, y0, width, height) {
 }
 
 
+export function makeActiveConnectorPath(x0, y0, width, height) {
+    return [
+        ['M', [29.5 + (29.5 - 15 - 8) + x0, y0 + height]],
+        ['H', [29.5 + x0]],
+        ['l', [-6, 4], [-3, 0], [-6, -4]],
+        ['H', [8 + x0]]
+    ].map(function (cmd) {
+        return cmd[0] + ' ' + cmd.slice(1).map(function (p) { return p.join(',') }).join(' ');
+    });
+}
+
 
 function Active() {
 
@@ -52,6 +63,16 @@ Active.render = function () {
             attr: {
                 d: makeActivePath(10, 20, 240, 50)
 
+            }
+        },
+        {
+            tag: 'path',
+            attr: {
+                d: makeActiveConnectorPath(10, 20, 240, 50)
+            },
+            style: {
+                strokeWidth: '4',
+                stroke: 'rgba(255, 255, 0, 0.9)'
             }
         },
         {
