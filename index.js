@@ -4,13 +4,15 @@ import  "./js/svg/Entry";
 import  "./js/svg/Active";
 import  "./js/svg/Expression";
 import { makeBlockPath } from "./js/svg/Block";
-
+import { makeExpressionPath } from "./js/svg/Expression";
+import  "./js/svg/ComboBox";
 
 var ABlockly ={
     core : Core,
     _ : Core._,
     $ : Core.$,
-    makeBlockPath: makeBlockPath
+    makeBlockPath: makeBlockPath,
+    makeExpressionPath: makeExpressionPath
 };
 
 

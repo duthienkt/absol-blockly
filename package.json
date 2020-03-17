@@ -28,6 +28,7 @@
   "homepage": "https://github.com/duthienkt/absol-blockly#readme",
   "dependencies": {
     "absol": "^1.12.2",
+    "absol-acomp": "^0.8.13",
     "absol-svg": "file:../absol-svg"
   },
   "devDependencies": {
