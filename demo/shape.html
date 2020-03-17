@@ -36,18 +36,16 @@
                 height: '400px'
             }
         }).addTo(document.body);
-
-        var entry = _({
-            tag: 'entry', props: {
-                name: 'Setup'
-            }
-        }).addTo(canvas).attr('transform', 'translate(5, 5');
-        entry.updateSize();
-
         var active = _({
-            tag: 'active'
-        }).addTo(canvas).attr('transform', 'translate(5, 40)');
-        entry.updateSize();
+            tag: 'path',
+            style: {
+                fill: 'none',
+                stroke: 'red'
+            },
+            attr: {
+                d: ABlockly.makeBlockPath(10, 20, 66, 24, 300, 100)
+            }
+        }).addTo(canvas).attr('transform', 'translate(5, 5)');
 
     </script>
 
