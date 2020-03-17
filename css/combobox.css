@@ -1,0 +1,60 @@
+.ab-combo-box {
+    cursor: pointer;
+}
+
+
+.ab-combo-box-background {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.ab-combo-box-focus .ab-combo-box-background {}
+
+.ab-combo-box:hover .ab-combo-box-background {
+    stroke: rgba(255, 255, 255, 0.6);
+    stroke-width: 1.2;
+}
+
+.ab-combo-box.ab-combo-box-active .ab-combo-box-background {
+    stroke: rgba(255, 255, 255, 0.9);
+    stroke-width: 1.8;
+}
+
+.ab-combo-box-text {
+    fill: black;
+    stroke: none;
+    font-size: 14px;
+}
+
+.ab-combo-box-toggle-icon {
+    fill: mediumblue;
+}
+
+.ab-combo-box-list-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.ab-combo-box-list {
+    font-size: 14px;
+    background: white;
+    -webkit-box-shadow: 2px 2px 9px 0px rgba(20, 20, 20, 1);
+    -moz-box-shadow: 2px 2px 9px 0px rgba(20, 20, 20, 1);
+    box-shadow: 2px 2px 9px 0px rgba(20, 20, 20, 1);
+    cursor: pointer;
+}
+
+.ab-combo-box-list-item {
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 16px;
+}
+
+.ab-combo-box-list-item:hover {
+    background-color: rgb(214, 214, 217);
+}
+
+.ab-combo-box-list-item.ab-combo-box-list-item-selected {
+    background-color: rgb(201, 201, 204);
+    font-family: Arial, Helvetica, sans-serif;
+}
