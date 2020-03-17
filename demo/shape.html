@@ -29,13 +29,29 @@
     <script class="viewable">
         var _ = ABlockly._;
         var $ = ABlockly.$;
+
         var canvas = _({
             tag: 'svg',
             attr: {
                 width: '900px',
                 height: '400px'
+            },
+            style: {
+                'background-color': 'black'
             }
         }).addTo(document.body);
+        var rect = _({
+            tag: 'rect',
+            attr: {
+                x: 10,
+                y: 20,
+                width: 300,
+                height: 100
+            },
+            style: {
+                fill: 'green',
+            }
+        }).addTo(canvas);
         var active = _({
             tag: 'path',
             style: {
@@ -43,10 +59,27 @@
                 stroke: 'red'
             },
             attr: {
-                d: ABlockly.makeBlockPath(10, 20, 66, 24, 300, 100)
+                d: ABlockly.makeExpressionPath(10, 20, 300, 100)
             }
-        }).addTo(canvas).attr('transform', 'translate(5, 5)');
+        }).addTo(canvas);
 
+        var comboBox = _({
+            tag: 'combobox',
+            attr:
+            {
+                transform: 'translate(500, 10)'
+            },
+            props: {
+                items: [
+                    { text: '+', value: '+' },
+                    { text: '-', value: '-' },
+                    { text: '*', value: '*' },
+                    { text: '/', value: '/' }
+                ],
+                value: '*'
+            }
+        }).addTo(canvas);
+        comboBox.updateSize();
     </script>
 
 
