@@ -6,6 +6,7 @@ import  "./js/svg/Expression";
 import { makeBlockPath } from "./js/svg/Block";
 import { makeExpressionPath } from "./js/svg/Expression";
 import  "./js/svg/ComboBox";
+import  "./js/svg/TextInput";
 
 var ABlockly ={
     core : Core,

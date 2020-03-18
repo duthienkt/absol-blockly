@@ -10,7 +10,6 @@
     fill: rgba(255, 255, 255, 0.6);
 }
 
-.ab-combo-box-focus .ab-combo-box-background {}
 
 .ab-combo-box:hover .ab-combo-box-background {
     stroke: rgba(255, 255, 255, 0.6);

@@ -1,0 +1,47 @@
+.ab-text-input {}
+
+.ab-text-input-background {}
+
+.ab-text-input-text {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: pre;
+}
+
+
+.ab-text-input-background {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+
+.ab-text-input:hover .ab-text-input-background {
+    stroke: rgba(255, 255, 255, 0.6);
+    stroke-width: 1.2;
+}
+
+.ab-text-input.ab-text-input-active .ab-text-input-background {
+    stroke: rgba(255, 255, 255, 0.9);
+    stroke-width: 1.8;
+}
+
+
+.ab-text-input.ab-text-input-active .ab-text-input-text {
+    fill: transparent;
+}
+
+.ab-text-input-real-input-ctn {
+    position: fixed;
+    z-index: 100;
+}
+
+.ab-text-input-real-input {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
